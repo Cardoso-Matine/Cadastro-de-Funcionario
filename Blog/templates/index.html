@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" integrity="sha384-gH2ylJqKdNHPEqon4Mqa/HGKIhSk|HeLSAyhkYV859U5AR6csBvApHHNI/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwIZdYEkO39Gagi7vIsFojrRAoQmDKKtQBHUuLZgAsSv4jD4Xa" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main>
+        <section class="py-5 text-center container">
+            <div class="row py-5">
+                <div class="col-lg-6 col-md-8 mx-auto">
+                    <h1 class="fw-light">Funcionários</h1>
+                    <p class="lead text-muted">Esta é a lista de todos os funcionários da Empresa.</p>
+                </div>
+            </div>
+</section>
+
+<style>
+
+a{
+
+    
+text-decoration:none;
+font-size:large;
+color:white;
+background-color:gray;
+border-radius:10px;
+&:hover{
+    color:green;
+}
+}
+
+</style>
+
+
+
+
+
+        <div class="album py-5 bg-light">
+            <div style="margin-bottom:20px" class="text-center"><a href= "http://127.0.0.1:8000/Blog/create/">cadastrar funcionario</a></div>
+            <div class="container">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    {% for x in mFuncionarios %}
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">{{x.name}}</h5>
+                                <p class="card-text">{{x.title}}</p>
+                                <p class="card-text">codigo{{x.id}}</p>
+                                <div class="d-flex justify-content-between align-items-center">
+
+                                    <div class="btn-group">
+                                        
+                                        <a href= "update/{{x.id}}" 
+                                        type="button"
+                                         class="btn btn-sm btn-outline-secondary"
+
+                                         >
+
+                                        Atualizar
+                                    </a>
+
+
+                                        <a href= "deletar/{{x.id}}" 
+                                        type="button"
+                                         class="btn btn-sm btn-outline-secondary">
+                                        Deletar
+                                    </a>
+
+
+                                    </div>
+                                    <small class="text-muted">30 Minutos</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {%endfor%}
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; Blog_django</p>
+        </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
