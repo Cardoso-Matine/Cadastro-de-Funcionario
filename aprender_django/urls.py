@@ -19,5 +19,5 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('Blog/',include('Blog.urls')),
+path('', include('Blog.urls')),  # Carrega as URLs do Blog diretamente no root
 ]
