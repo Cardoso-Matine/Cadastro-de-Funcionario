@@ -1,10 +1,10 @@
-# Cadastro de Funcionários
+# Employee Registration
 
-Este projeto é um sistema simples para o cadastro de funcionários de uma empresa. Ele permite registrar informações básicas sobre cada funcionário, como nome e cargo
+This project is a system for registering a company's employees. It allows you to record basic information about each employee, such as name and position
 
-## Funcionalidades:
-- Adicionar novos funcionários ao sistema.
-- Listar funcionários cadastrados.
-- Editar e remover registros de funcionários.
+## Features:
+- Add new employees to the system.
+- List registered employees.
+- Edit and remove employee records.
   
-O projeto foi desenvolvido com Python e Django, garantindo uma interface amigável para gerenciar o cadastro de funcionários de forma eficiente.
+The project was developed with Python, Django and SQL With CRUD functionality guaranteeing a user-friendly interface to manage employee registration efficiently..
