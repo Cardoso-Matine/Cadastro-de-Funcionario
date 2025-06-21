@@ -1,8 +1,8 @@
 # Employee Registration
 
-👉 Live Demo: https://cadastro-de-funcionario.onrender.com/
+This project is a system for registering a company's employees. It allows you to record basic information about each employee, such as name and position.
 
-This project is a system for registering a company's employees. It allows you to record basic information about each employee, such as name and position
+👉 Live Demo: https://cadastro-de-funcionario.onrender.com/
 
 ## Features:
 - Add new employees to the system.
